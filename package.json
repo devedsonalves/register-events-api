@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tsx src/server.ts",
+    "build": "tsc",
     "dev": "tsx watch --env-file .env src/server.ts"
   },
   "engines": {
