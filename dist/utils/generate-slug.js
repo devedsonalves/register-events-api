@@ -1,4 +1,7 @@
-export function generateSlug(text) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.generateSlug = generateSlug;
+function generateSlug(text) {
     return text
         .toLowerCase()
         .replace(/ /g, "-")
@@ -7,3 +10,4 @@ export function generateSlug(text) {
         .replace(/^-+/, "")
         .replace(/-+$/, "");
 }
+//# sourceMappingURL=generate-slug.js.map
