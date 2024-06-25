@@ -5,5 +5,10 @@
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/dist/server.js" }
-  ]
+  ],
+  "functions": {
+    "src/**/*.ts": {
+      "includeFiles": "node_modules/.prisma/**"
+    }
+  }
 }
