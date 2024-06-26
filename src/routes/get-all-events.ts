@@ -6,7 +6,7 @@ import { prisma } from "../lib/prisma";
 export async function getAllEvents(app: FastifyInstance) {
   app
     .withTypeProvider<ZodTypeProvider>()
-    .get('/events', {
+    .get('/events/all', {
       schema: {
         querystring: z.object({
           pageIndex: z.string().nullish().default("0").transform(Number)
