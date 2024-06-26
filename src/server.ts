@@ -7,6 +7,7 @@ import { getEvent } from "./routes/get-event"
 import { getPeopleBadge } from "./routes/get-people-badge"
 import { checkIn } from "./routes/check-in"
 import { getEventPeoples } from "./routes/get-event-peoples"
+import { getAllEvents } from "./routes/get-all-events"
 
 const app = fastify()
 
@@ -19,6 +20,7 @@ app.register(getEvent)
 app.register(getPeopleBadge)
 app.register(checkIn)
 app.register(getEventPeoples)
+app.register(getAllEvents)
 
 app.listen({ port: 3000 })   
   .then(() => console.log('Listening on port: { 3000 } 🔥'))
