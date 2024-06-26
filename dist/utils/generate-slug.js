@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.generateSlug = generateSlug;
-function generateSlug(text) {
+export function generateSlug(text) {
     return text
         .toLowerCase()
         .replace(/ /g, "-")
