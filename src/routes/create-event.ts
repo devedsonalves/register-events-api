@@ -39,5 +39,6 @@ export async function createEvent(app: FastifyInstance) {
       })
 
       return response.status(201).send({ id: event.id, title: event.title })
-    })
+    }
+  )
 }

@@ -37,5 +37,6 @@ export async function checkIn(app: FastifyInstance) {
       })
 
       return response.status(201).send({ id: checkIn.id })
-    })
+    }
+  )
 }

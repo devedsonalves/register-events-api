@@ -33,5 +33,6 @@ export async function getAllEvents(app: FastifyInstance) {
       })
 
       return response.status(200).send(peoples)
-    })
+    }
+  )
 }

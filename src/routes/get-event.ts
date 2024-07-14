@@ -48,6 +48,6 @@ export async function getEvent(app: FastifyInstance) {
       }
 
       return response.status(200).send(event)
-    })
-
+    }
+  )
 }

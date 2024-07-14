@@ -50,5 +50,6 @@ export async function getEventPeoples(app: FastifyInstance) {
       })
 
       return response.status(200).send(peoples)
-    })
+    }
+  )
 }

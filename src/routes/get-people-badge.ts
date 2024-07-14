@@ -55,5 +55,6 @@ export async function getPeopleBadge(app: FastifyInstance) {
           title: people.event.title
         }
       })
-    })
+    }
+  )
 }
